@@ -1,11 +1,11 @@
 const products = [
   { name: "Chocolates", img: "/product/choco.png" },
   { name: "Biscuits", img: "/product/b.png" },
-  { name: "Eclairs", img: "/product/e.png" },
+  { name: "Cake", img: "/product/ck.png" },
   { name: "Chips & Snacks", img: "/product/s.png" },
   { name: "Gift Items", img: "/product/g.png" },
   { name: "Traditional Indian Sweets", img: "/product/ti.png" },
-  { name: "Bakery Products", img: "/product/B.png" },
+  { name: "Ice Creams", img: "/product/ic.png" },
   { name: "Flavoured Carbonated Drinks", img: "/product/cd.png" },
 ];
 
@@ -29,7 +29,7 @@ export default function ProductRange() {
               <img
                 src={p.img}
                 alt={p.name}
-                className=" h-[200px] object-contain  shadow-sm"
+                className=" h-[185px] object-contain  shadow-sm"
               />
               <p className="mt-2 text-[#0B2748] font-semibold text-[12px] text-center leading-snug">
                 {p.name}

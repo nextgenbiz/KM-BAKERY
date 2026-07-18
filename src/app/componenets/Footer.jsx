@@ -5,9 +5,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
-  { label: "Gallery", href: "/gallery" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -18,14 +16,17 @@ const branches = [
   { label: "Ernakulam (Cochin)", href: "https://maps.app.goo.gl/ByuDn748vwrfmtEM8" },
   { label: "Alappuzha", href: "https://maps.app.goo.gl/mSfnjKivqGuLagaG7" },
   { label: "Kollam", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
+    { label: "Malappuram", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
+
+
+
 ];
 
 const socials = [
   { icon: FaFacebookF, href: "#", label: "Facebook" },
   { icon: FaInstagram, href: "#", label: "Instagram" },
   { icon: FaWhatsapp, href: "https://wa.me/919876543210", label: "WhatsApp" },
-  { icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
-];
+  ];
 
 export default function Footer() {
   return (

@@ -1,8 +1,8 @@
 const stats = [
-  { value: "500+", label: "Happy Clients" },
-  { value: "1000+", label: "Products" },
+  { value: "10,000+", label: "Happy Clients" },
+  { value: "3000+", label: "Products" },
   { value: "50+", label: "Trusted Brands" },
-  { value: "10+", label: "Years of Trust" },
+  { value: "15+", label: "Years of Trust" },
 ];
 
 export default function AboutSection() {

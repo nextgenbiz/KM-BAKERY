@@ -6,7 +6,7 @@ const stats = [
         <path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" />
       </svg>
     ),
-    value: "6",
+    value: "7",
     label: "Branches Across\nKerala",
   },
   {

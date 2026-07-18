@@ -6,6 +6,8 @@ const brands = [
   { name: "American Snacks", img: "/as.png" },
   { name: "Kamco", img: "/kmco.png" },
   { name: "Glacier", img: "/glacier.png" },
+  { name: "Glacier", img: "/roja.png" },
+
 ];
 
 export default function BrandPartners() {
@@ -27,7 +29,7 @@ export default function BrandPartners() {
         </div>
 
         {/* Brand logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-5">
           {brands.map((b) => (
             <div
               key={b.name}
