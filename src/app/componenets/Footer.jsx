@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaLinkedinIn,
+} from "react-icons/fa6";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const quickLinks = [
@@ -13,20 +18,20 @@ const branches = [
   { label: "Kannur", href: "https://maps.app.goo.gl/inNjXmetQwKENwQGA" },
   { label: "Wayanad", href: "https://maps.app.goo.gl/RXvBZDwKUpv5uSWi9" },
   { label: "Palakkad", href: "https://maps.app.goo.gl/CNerNsfbwWhNZKmu6" },
-  { label: "Ernakulam (Cochin)", href: "https://maps.app.goo.gl/ByuDn748vwrfmtEM8" },
+  {
+    label: "Ernakulam (Cochin)",
+    href: "https://maps.app.goo.gl/ByuDn748vwrfmtEM8",
+  },
   { label: "Alappuzha", href: "https://maps.app.goo.gl/mSfnjKivqGuLagaG7" },
   { label: "Kollam", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
-    { label: "Malappuram", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
-
-
-
+  { label: "Malappuram", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
 ];
 
 const socials = [
   { icon: FaFacebookF, href: "#", label: "Facebook" },
   { icon: FaInstagram, href: "#", label: "Instagram" },
   { icon: FaWhatsapp, href: "https://wa.me/919876543210", label: "WhatsApp" },
-  ];
+];
 
 export default function Footer() {
   return (
@@ -49,8 +54,8 @@ export default function Footer() {
               </div>
             </a>
             <p className="text-slate-300 text-[13px] leading-relaxed mb-5">
-              Delivering quality bakery and food products across Kerala with trust and
-              excellence.
+              Delivering quality bakery and food products across Kerala with
+              trust and excellence.
             </p>
             <div className="flex items-center gap-3">
               {socials.map(({ icon: Icon, href, label }) => (
@@ -110,13 +115,19 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-300 text-[13px]">
               <li className="flex items-center gap-2">
                 <Phone size={15} className="shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-white transition-colors">
+                <a
+                  href="tel:+919876543210"
+                  className="hover:text-white transition-colors"
+                >
                   +91 98765 43210
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={15} className="shrink-0" />
-                <a href="mailto:info@kmbakery.com" className="hover:text-white transition-colors">
+                <a
+                  href="mailto:info@kmbakery.com"
+                  className="hover:text-white transition-colors"
+                >
                   info@kmbakery.com
                 </a>
               </li>
@@ -128,7 +139,8 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  K.M. Bakery, Kerala, India
+                  4W7V+6G5, Kadappadi-Mathamkulam, Puthanpurakkal, Valakkandi,
+                  Peruvallur, Kerala 673638
                 </a>
               </li>
             </ul>
@@ -139,8 +151,14 @@ export default function Footer() {
         <div className="mt-12 pt-5 border-t border-white/15 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px] text-slate-400">
           <p>© 2024 K.M. Bakery &amp; Food Product. All Rights Reserved.</p>
           <p>
-            <a href="#" className="hover:text-white">Privacy Policy</a> &nbsp;|&nbsp;
-            <a href="#" className="hover:text-white"> Terms &amp; Conditions</a>
+            <a href="#" className="hover:text-white">
+              Privacy Policy
+            </a>{" "}
+            &nbsp;|&nbsp;
+            <a href="#" className="hover:text-white">
+              {" "}
+              Terms &amp; Conditions
+            </a>
           </p>
         </div>
       </div>
