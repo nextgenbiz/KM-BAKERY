@@ -1,13 +1,13 @@
 const subBrands = [
   {
     name: "Sub Brand One",
-    img: "/sub1.jpeg", // Replace with your image
+    img: "/sub1.png", // Replace with your image
     tagline: "Premium Quality",
     description: "Crafted with the finest ingredients, this sub-brand represents our commitment to gourmet excellence and premium taste for discerning customers."
   },
   {
     name: "Sub Brand Two",
-    img: "/sub1.jpeg", // Replace with your image
+    img: "/sub2.png", // Replace with your image
     tagline: "Everyday Freshness",
     description: "Focused on daily freshness and affordability, this line brings our trusted bakery heritage to everyday snacks and household staples across Kerala."
   },
@@ -28,7 +28,7 @@ export default function AboutBrands() {
         </div>
 
         {/* Sub-Brands Grid (No Cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
           {subBrands.map((brand, index) => (
             <div 
               key={brand.name} 
@@ -37,11 +37,11 @@ export default function AboutBrands() {
               }`}
             >
               {/* Logo Area */}
-              <div className="w-full md:w-2/5 flex-shrink-0">
+              <div className="w-full md:w-2/5 flex-shrink-0 bg-amber-">
                 <img
                   src={brand.img}
                   alt={brand.name}
-                  className="w-full h-32 object-contain" // Clean presentation without a card
+                  className="w-full h-32 object-contain scale-[1.1] " // Clean presentation without a card
                 />
               </div>
 

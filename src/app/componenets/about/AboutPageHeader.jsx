@@ -24,7 +24,7 @@ export default function AboutPageHeader({ bgImage = "about/abouthero.png" }) {
         </h1>
         <p className="text-black/70 text-[14px] max-w-md mt-4">
           At K.M. Bakery &amp; Food Product, we are committed to delivering the best quality
-          bakery and food products to retailers and supermarkets across Kerala.
+          bakery and food products to wholesale, retailers and supermarkets across Kerala.
         </p>
 
         
