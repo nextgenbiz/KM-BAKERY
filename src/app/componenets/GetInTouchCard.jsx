@@ -6,11 +6,10 @@ const items = [
     iconBg: "bg-[#E8402C]",
     title: "Head Office",
     lines: [
-      "K.M. Bakery & Food Product",
-      "Near Town Hall, Market Road,",
-      "Kochi - 682 016, Kerala, India",
+      "4W7V+6G5, Kadappadi-Mathamkulam Puthanpurakkal, Valakkandi, Peruvallur, Kerala 673638, India",
     ],
   },
+
   {
     icon: Phone,
     iconBg: "bg-[#123B7A]",

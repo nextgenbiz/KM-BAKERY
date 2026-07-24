@@ -16,7 +16,7 @@ const quickLinks = [
 
 const branches = [
   { label: "Kannur", href: "https://maps.app.goo.gl/inNjXmetQwKENwQGA" },
-  { label: "Wayanad", href: "https://maps.app.goo.gl/RXvBZDwKUpv5uSWi9" },
+  { label: "Wayanad", href: "https://maps.app.goo.gl/x9tnq3LjJMFduZKQ8?g_st=iw" },
   { label: "Palakkad", href: "https://maps.app.goo.gl/CNerNsfbwWhNZKmu6" },
   {
     label: "Ernakulam (Cochin)",
@@ -134,7 +134,7 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <MapPin size={15} className="shrink-0" />
                 <a
-                  href="https://maps.app.goo.gl/VYBaowkiuGAHyNEy9"
+                  href="https://maps.app.goo.gl/adQL5ndvZMogMTLn9?g_st=ic"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
