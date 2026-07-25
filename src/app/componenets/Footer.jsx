@@ -27,12 +27,23 @@ const branches = [
   },
   { label: "Alappuzha", href: "https://maps.app.goo.gl/mSfnjKivqGuLagaG7" },
   { label: "Kollam", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
-  { label: "Malappuram", href: "https://maps.app.goo.gl/gT4zkEfGrDeL7jhg7?g_st=ic" },
+  {
+    label: "Malappuram",
+    href: "https://maps.app.goo.gl/gT4zkEfGrDeL7jhg7?g_st=ic",
+  },
 ];
 
 const socials = [
-  { icon: FaFacebookF, href: "https://www.facebook.com/share/1GG5vesvEk/?mibextid=wwXIfr", label: "Facebook" },
-  { icon: FaInstagram, href: "https://www.instagram.com/mittayikkada?igsh=MWwydmJpOGJ1MG90Yg%3D%3D&utm_source=qr", label: "Instagram" },
+  {
+    icon: FaFacebookF,
+    href: "https://www.facebook.com/share/1GG5vesvEk/?mibextid=wwXIfr",
+    label: "Facebook",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/mittayikkada?igsh=MWwydmJpOGJ1MG90Yg%3D%3D&utm_source=qr",
+    label: "Instagram",
+  },
   { icon: FaWhatsapp, href: "https://wa.me/919809969617", label: "WhatsApp" },
 ];
 
@@ -159,11 +170,10 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  ARAKKAL MALL,
+                  Arakkal Mall, <br />
+                  Kadappadi, Peruvallur P.o.,
                   <br />
-                  KADAPPADI, PERUVALLUR P.O.,
-                  <br />
-                  MALAPPURAM, KERALA - 673638
+                  Malappuram, Kerala - 673638{" "}
                 </a>
               </li>
             </ul>
