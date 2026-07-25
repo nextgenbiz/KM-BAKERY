@@ -72,7 +72,7 @@ export default function WholesalePartner({ image = "/warehouse-trucks.png" }) {
         {/* Right: image */}
         <div>
           <img
-            src="/about6.webp"
+            src="/about7.webp"
             alt="K.M. Bakery distribution trucks and warehouse"
             className="w-full h-[400px] object-cover rounded-xl shadow-md"
           />

@@ -7,9 +7,9 @@ import {
 import { CheckCircle2 } from "lucide-react";
 
 const socials = [
-  { icon: FaFacebookF, href: "#", color: "text-[#1877F2]" },
-  { icon: FaInstagram, href: "#", color: "text-[#E1306C]" },
-  { icon: FaWhatsapp, href: "#", color: "text-[#25D366]" },
+  { icon: FaFacebookF, href: "https://www.facebook.com/share/1GG5vesvEk/?mibextid=wwXIfr", color: "text-[#1877F2]" },
+  { icon: FaInstagram, href: "https://www.instagram.com/mittayikkada?igsh=MWwydmJpOGJ1MG90Yg%3D%3D&utm_source=qr", color: "text-[#E1306C]" },
+  { icon: FaWhatsapp, href: "https://wa.me/919809969617", color: "text-[#25D366]" },
 ];
 
 const perks = [
@@ -32,7 +32,7 @@ export default function FollowPerksCard() {
             href={s.href}
             className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:scale-105 transition-transform"
           >
-            <s.icon className={`w-3 h-3 ${s.color}`} />
+            <s.icon className={`w-5 h-5 ${s.color}`} />
           </a>
         ))}
       </div>
