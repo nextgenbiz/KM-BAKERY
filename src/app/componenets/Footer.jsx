@@ -16,7 +16,10 @@ const quickLinks = [
 
 const branches = [
   { label: "Kannur", href: "https://maps.app.goo.gl/inNjXmetQwKENwQGA" },
-  { label: "Wayanad", href: "https://maps.app.goo.gl/x9tnq3LjJMFduZKQ8?g_st=iw" },
+  {
+    label: "Wayanad",
+    href: "https://maps.app.goo.gl/x9tnq3LjJMFduZKQ8?g_st=iw",
+  },
   { label: "Palakkad", href: "https://maps.app.goo.gl/CNerNsfbwWhNZKmu6" },
   {
     label: "Ernakulam (Cochin)",
@@ -24,13 +27,13 @@ const branches = [
   },
   { label: "Alappuzha", href: "https://maps.app.goo.gl/mSfnjKivqGuLagaG7" },
   { label: "Kollam", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
-  { label: "Malappuram", href: "https://maps.app.goo.gl/VYBaowkiuGAHyNEy9" },
+  { label: "Malappuram", href: "https://maps.app.goo.gl/gT4zkEfGrDeL7jhg7?g_st=ic" },
 ];
 
 const socials = [
-  { icon: FaFacebookF, href: "#", label: "Facebook" },
-  { icon: FaInstagram, href: "#", label: "Instagram" },
-  { icon: FaWhatsapp, href: "https://wa.me/919876543210", label: "WhatsApp" },
+  { icon: FaFacebookF, href: "https://www.facebook.com/share/1GG5vesvEk/?mibextid=wwXIfr", label: "Facebook" },
+  { icon: FaInstagram, href: "https://www.instagram.com/mittayikkada?igsh=MWwydmJpOGJ1MG90Yg%3D%3D&utm_source=qr", label: "Instagram" },
+  { icon: FaWhatsapp, href: "https://wa.me/919809969617", label: "WhatsApp" },
 ];
 
 export default function Footer() {
@@ -111,17 +114,33 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <p className="font-semibold text-[15px] mb-4">Contact Us</p>
-            <ul className="space-y-3 text-slate-300 text-[13px]">
-              <li className="flex items-center gap-2">
-                <Phone size={15} className="shrink-0" />
-                <a
-                  href="tel:+919876543210"
-                  className="hover:text-white transition-colors"
-                >
-                  +91 98765 43210
-                </a>
+            <p className="mb-4 text-[15px] font-semibold">Contact Us</p>
+
+            <ul className="space-y-3 text-[13px] text-slate-300">
+              <li className="flex items-start gap-2">
+                <Phone size={15} className="mt-0.5 shrink-0" />
+                <div className="space-y-1">
+                  <a
+                    href="tel:+919809969617"
+                    className="block hover:text-white transition-colors"
+                  >
+                    +91 98099 69617 — KOYAMON K
+                  </a>
+                  <a
+                    href="tel:+918848119628"
+                    className="block hover:text-white transition-colors"
+                  >
+                    +91 88481 19628 — ADIL BUKHARI K
+                  </a>
+                  <a
+                    href="tel:+917306746796"
+                    className="block hover:text-white transition-colors"
+                  >
+                    +91 73067 46796 — KASHIF K
+                  </a>
+                </div>
               </li>
+
               <li className="flex items-center gap-2">
                 <Mail size={15} className="shrink-0" />
                 <a
@@ -131,16 +150,20 @@ export default function Footer() {
                   info@kmbakery.com
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <MapPin size={15} className="shrink-0" />
+
+              <li className="flex items-start gap-2">
+                <MapPin size={15} className="mt-0.5 shrink-0" />
                 <a
-                  href="https://maps.app.goo.gl/adQL5ndvZMogMTLn9?g_st=ic"
+                  href="https://maps.app.goo.gl/gT4zkEfGrDeL7jhg7?g_st=ic"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  4W7V+6G5, Kadappadi-Mathamkulam, Puthanpurakkal, Valakkandi,
-                  Peruvallur, Kerala 673638
+                  ARAKKAL MALL,
+                  <br />
+                  KADAPPADI, PERUVALLUR P.O.,
+                  <br />
+                  MALAPPURAM, KERALA - 673638
                 </a>
               </li>
             </ul>

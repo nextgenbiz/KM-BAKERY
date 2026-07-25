@@ -20,7 +20,7 @@ const images = [
   { src: "/Wayanad.jpeg", location: "Wayanad" },
   { src: "/Alappuzha.jpeg", location: "Alappuzha" },
   { src: "/Kollam.jpeg", location: "Kollam" },
-  { src: "/about6.jpg", location: "Malappuram" },
+  { src: "/about6.webp", location: "Malappuram" },
 ];
 
 export default function AboutSection() {

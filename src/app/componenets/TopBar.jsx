@@ -22,7 +22,7 @@ export default function TopBar() {
             <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4">
               <path d="M6 2h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 11l5 2v3a2 2 0 0 1-2 2C10.5 18 4 11.5 4 4a2 2 0 0 1 2-2Z" fill="#fff" />
             </svg>
-            <span className="text-[13px]">+91 98765 43210</span>
+            <span className="text-[13px]">+91 98099 69617 </span>
           </a>
           <a href="mailto:info@kmbakery.com" className="flex items-center gap-2">
             <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4">

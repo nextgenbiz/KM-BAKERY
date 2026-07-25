@@ -6,7 +6,7 @@ const items = [
     iconBg: "bg-[#E8402C]",
     title: "Head Office",
     lines: [
-      "4W7V+6G5, Kadappadi-Mathamkulam Puthanpurakkal, Valakkandi, Peruvallur, Kerala 673638, India",
+      "Arakkal Mall,Kadappadi, Peruvallur P.o.,Malappuram, Kerala - 673638",
     ],
   },
 
@@ -14,7 +14,7 @@ const items = [
     icon: Phone,
     iconBg: "bg-[#123B7A]",
     title: "Phone",
-    lines: ["+91 98765 43210", "+91 0484 1234567"],
+    lines: ["+91 98099 69617", "+91 884-8119628", "+91 73067 46796"],
   },
   {
     icon: Mail,
