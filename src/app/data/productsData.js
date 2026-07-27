@@ -12,13 +12,23 @@ const productCategories = [
       { id: 6, name: "Hoppin Toy Candies", image: "/product/hoppin-toy-candies.png" },
       { id: 7, name: "Ausome Wafers & Chocolates", image: "/product/ausome-wafers.png" },
       { id: 8, name: "Hugs Chocolates & Candies", image: "/product/hugs.png" },
-      { id: 9, name: "Kag Peda, BharatGold Sonpapdi", image: "/product/kag-peda.png" },
+      { id: 9, name: "BharatGold Sonpapdi", image: "/product/kag-peda.png" },
       { id: 10, name: "⁠Alfmin coconuts sweets", image: "/product/alfmin-coconut-candy.png" },
       { id: 11, name: "American Snaks", image: "/product/american.png" },
       { id: 12, name: "Kamco Chew Candies", image: "/product/kamco-chew-candies.png" },
       { id: 13, name: "Oshon Chocolates", image: "/product/osho-chocolates.png" },
 { id: 14, name: "Amazone Snaks ", image: "/product/amazon.png" },
-{ id: 15, name: "Bro Lays Pkt", image: "/product/bro.png" },    ],
+{ id: 15, name: "Bro Lays Pkt", image: "/product/bro.png" }, 
+{ id: 16, name: "KGN Sona papdi", image: "/product/KGN.png" },   
+{ id: 17, name: "Leo candies", image: "/product/LEO.png" }, 
+{ id: 18, name: "SY ice cone", image: "/product/SY.png" }, 
+{ id: 19, name: "Hunani Coconut Laddu", image: "/product/Hunani.png" },   
+{ id: 20, name: "KAG Milk Peda", image: "/product/KAG.png" },   
+
+
+   ],
+ 
+   
 
     
   },

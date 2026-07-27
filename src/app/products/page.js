@@ -5,6 +5,7 @@ import ProductsListing from "../componenets/product/ProductsListing";
 import ProductsBottomFeatures from "../componenets/product/ProductsBottomFeatures";
 import BulkSupplyCTA from "../componenets/product/BulkSupplyCTA";
 import Footer from "../componenets/Footer";
+import BrandPartners from "../componenets/product/Logos";
 
 export default function ProductsPage() {
   return (
@@ -13,6 +14,7 @@ export default function ProductsPage() {
       <Navbar />
       <ProductsHero />
       <ProductsListing />
+      <BrandPartners/>
       <ProductsBottomFeatures />
       <BulkSupplyCTA />
       <Footer />
