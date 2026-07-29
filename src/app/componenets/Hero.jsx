@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function Hero({
-  bgImage = "/hero.jpeg",
+  bgImage = "/hero2.png",
   mobileBgImage = "/hero-mobile.png",
 }) {
   return (
