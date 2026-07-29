@@ -1,14 +1,15 @@
 import Link from "next/link";
 
 export default function Hero({
-  bgImage = "/hero.png",
+  bgImage = "/hero.jpeg",
   mobileBgImage = "/hero-mobile.png",
 }) {
   return (
-    <section className="relative w-full h-[520px] sm:h-[500px] lg:h-[550px] overflow-hidden">
+    <section className="relative w-full h-[520px] sm:h-[500px] lg:h-[620px] overflow-hidden">
       {/* Desktop Background */}
       <div
-        className="absolute inset-0 hidden sm:block bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 hidden sm:block bg-cover
+         bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
 
