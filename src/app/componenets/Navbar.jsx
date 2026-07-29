@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -17,6 +19,11 @@ export default function Navbar() {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Close menu when route changes
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   const links = [
     { label: "Home", href: "/" },
@@ -33,7 +40,7 @@ export default function Navbar() {
           : "border-b border-gray-100"
       }`}
     >
-      <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between px-4 sm:px-6 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <Image
@@ -42,20 +49,20 @@ export default function Navbar() {
             width={48}
             height={48}
             priority
-            className="h-12 w-12 object-contain"
+            className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
           />
 
           <div className="leading-tight">
-            <p className="text-[#0B2748] font-extrabold text-lg tracking-tight">
+            <p className="text-[#0B2748] font-extrabold text-sm sm:text-lg tracking-tight">
               K.M. BAKERY &
             </p>
-            <p className="text-[#0B2748] font-extrabold text-lg tracking-tight -mt-1">
+            <p className="text-[#0B2748] font-extrabold text-sm sm:text-lg tracking-tight -mt-1">
               FOOD PRODUCT
             </p>
           </div>
         </Link>
 
-        {/* Navigation */}
+        {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-8">
           {links.map((link) => {
             const isActive = pathname === link.href;
@@ -75,6 +82,42 @@ export default function Navbar() {
                 {isActive && (
                   <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-[#E8402C]" />
                 )}
+              </Link>
+            );
+          })}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="lg:hidden text-[#0B2748]"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          menuOpen ? "max-h-96 border-t border-gray-100" : "max-h-0"
+        }`}
+      >
+        <div className="bg-white px-4 py-3 flex flex-col">
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`py-3 border-b border-gray-100 text-base font-medium transition-colors ${
+                  isActive
+                    ? "text-[#E8402C]"
+                    : "text-[#0B2748] hover:text-[#E8402C]"
+                }`}
+              >
+                {link.label}
               </Link>
             );
           })}

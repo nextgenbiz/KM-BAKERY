@@ -1,3 +1,6 @@
+
+import Link from "next/link";
+
 export default function ImportedExcellence({ bgImage = "/about/cta.png" }) {
   return (
     <section className="w-full bg-white pt-4 pb-">
@@ -18,9 +21,9 @@ export default function ImportedExcellence({ bgImage = "/about/cta.png" }) {
               We import premium quality food products directly from Dubai to
               bring the best global flavours to Kerala.
             </p>
-            <button className="w-fit bg-[#E8402C] text-white font-semibold text-[14px] px-6 py-3 rounded-md hover:bg-[#d0331f] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
+            <Link href="/products" className="w-fit bg-[#E8402C] text-white font-semibold text-[14px] px-6 py-3 rounded-md hover:bg-[#d0331f] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300">
               Explore Imported Products
-            </button>
+            </Link >
           </div>
         </div>
       </div>

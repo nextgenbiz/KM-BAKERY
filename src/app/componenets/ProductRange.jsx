@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 const products = [
   { name: "Chocolates", img: "/product/choco.png" },
   { name: "Biscuits", img: "/product/b.png" },
@@ -40,9 +43,9 @@ export default function ProductRange() {
 
         {/* CTA */}
         <div className="flex justify-center mt-10">
-          <button className="bg-transparent text-[#0B2748] font-light border-[1px] border-[#02101f] px-4 py-2 rounded-md transition-all duration-300 ease-out hover:bg-[#0B2748] hover:text-white hover:border-[#0B2748] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97]">
+          <Link href="/products" className="bg-transparent text-[#0B2748] font-light border-[1px] border-[#02101f] px-4 py-2 rounded-md transition-all duration-300 ease-out hover:bg-[#0B2748] hover:text-white hover:border-[#0B2748] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97]">
             View All Products
-          </button>
+          </Link>
         </div>
       </div>
     </section>

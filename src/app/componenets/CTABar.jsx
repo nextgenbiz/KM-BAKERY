@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 const features = [
   {
     label: "Wide Product Range",
@@ -55,12 +57,19 @@ export default function CTABar({ bgImage = "/ctabg.png" }) {
             With The Best Quality Products.
           </h2>
           <div className="flex items-center gap-4 shrink-0 ">
-            <button className="bg-[#E8402C] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#d0331f] transition-colors">
-              Get In Touch
-            </button>
-            <button className="border-2 bg-[#0f2e51]  border-[#0B2748] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#0B2748]  transition-colors">
-              Request a Quote
-            </button>
+             <Link
+    href="/contact"
+    className="bg-[#E8402C] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#d0331f] transition-colors"
+  >
+    Get In Touch
+  </Link>
+
+  <Link
+    href="/contact"
+    className="border-2 bg-[#0f2e51] border-[#0B2748] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#0B2748] transition-colors"
+  >
+    Request a Quote
+  </Link>
           </div>
         </div>
 

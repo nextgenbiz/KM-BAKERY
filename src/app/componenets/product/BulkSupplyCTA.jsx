@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Handshake } from "lucide-react";
 
 export default function BulkSupplyCTA() {
@@ -17,12 +19,12 @@ export default function BulkSupplyCTA() {
         </div>
 
         <div className="flex items-center gap-4 shrink-0">
-          <button className="bg-[#E8402C] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#d0331f] transition-colors">
+          <Link href="/contact" className="bg-[#E8402C] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#d0331f] transition-colors">
             Get In Touch
-          </button>
-          <button className="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-[#123B7A] transition-colors">
+          </Link>
+          <Link href="/contact" className="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-[#123B7A] transition-colors">
             Request a Quote
-          </button>
+          </Link>
         </div>
       </div>
     </section>

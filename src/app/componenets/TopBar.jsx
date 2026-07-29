@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TopBar() {
   return (
     <div className="w-full bg-[#E8402C] text-white">
@@ -34,9 +36,9 @@ export default function TopBar() {
         </div>
 
         {/* Right: CTA button */}
-        <button className="bg-[#0B2748] text-white text-[13px] font-medium px-4 py-2 rounded-md hover:bg-[#0f3260] transition-colors">
+        <Link  href="/contact" className="bg-[#0B2748] text-white text-[13px] font-medium px-4 py-2 rounded-md hover:bg-[#0f3260] transition-colors">
           Get In Touch
-        </button>
+        </Link>
       </div>
     </div>
   );
