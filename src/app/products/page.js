@@ -24,6 +24,12 @@ export const metadata = {
   },
 };
 
+
+
+
+
+
+
 function ProductsJsonLd() {
   const schema = {
     "@context": "https://schema.org",
