@@ -1,6 +1,6 @@
 export default function ProductPageHeader({
-  bgImage = "/product/producthero.png",
-  mobileBgImage = "/product/producthero-mobile.png",
+  bgImage = "/product/producthero.webp",
+  mobileBgImage = "/product/producthero-mobile.webp",
 }) {
   return (
     <section className="relative w-full h-[520px] sm:h-[420px] bg-[#F7F6F4] overflow-hidden">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function SidebarPromos({ dubaiImage = "/product/promo.png" }) {
+export default function SidebarPromos({ dubaiImage = "/product/promo.webp" }) {
   return (
     <div className="space-y-6">
       {/* Imported Goodness */}
