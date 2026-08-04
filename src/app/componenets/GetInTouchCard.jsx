@@ -20,7 +20,7 @@ const items = [
     icon: Mail,
     iconBg: "bg-[#E8402C]",
     title: "Email",
-    lines: ["info@kmbakery.com", "orders@kmbakery.com"],
+    lines: ["info@kmbakery.in"],
   },
   {
     icon: Clock,

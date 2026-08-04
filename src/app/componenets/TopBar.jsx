@@ -31,7 +31,7 @@ export default function TopBar() {
               <rect x="2" y="5" width="20" height="14" rx="2" fill="#fff" />
               <path d="M2 6l10 7L22 6" stroke="#E8402C" strokeWidth="1.4" />
             </svg>
-            <span className="text-[13px]">info@kmbakery.com</span>
+            <span className="text-[13px]">info@kmbakery.in</span>
           </a>
         </div>
 

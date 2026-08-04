@@ -10,6 +10,8 @@ const ENQUIRY_LABELS = {
 };
 
 function layout({ preheader, bodyHtml }) {
+  const logoUrl = `${process.env.NEXT_PUBLIC_SITE_URL || "https://kmbakery.in"}/logo.png`;
+
   return `
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${preheader}</div>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6;padding:24px 0;font-family:Arial,Helvetica,sans-serif;">
@@ -17,8 +19,17 @@ function layout({ preheader, bodyHtml }) {
       <td align="center">
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;overflow:hidden;">
           <tr>
-            <td style="background:#123B7A;padding:24px 32px;">
-              <span style="color:#ffffff;font-size:18px;font-weight:800;letter-spacing:0.3px;">K.M. BAKERY &amp; FOOD PRODUCT</span>
+            <td style="background:#123B7A;padding:20px 32px;">
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="vertical-align:middle;padding-right:12px;">
+                    <img src="${logoUrl}" alt="K.M. Bakery & Food Product" width="40" height="40" style="display:block;border-radius:4px;">
+                  </td>
+                  <td style="vertical-align:middle;">
+                    <span style="color:#ffffff;font-size:18px;font-weight:800;letter-spacing:0.3px;">K.M. BAKERY &amp; FOOD PRODUCT</span>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
           <tr>
@@ -29,7 +40,7 @@ function layout({ preheader, bodyHtml }) {
           <tr>
             <td style="background:#f9fafb;padding:20px 32px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:12px;line-height:1.6;">
               Arakkal Mall, Kadappadi, Peruvallur P.O., Malappuram, Kerala - 673638<br>
-              +91 98099 69617 &nbsp;|&nbsp; info@kmbakery.com &nbsp;|&nbsp; kmbakery.in
+              +91 98099 69617 &nbsp;|&nbsp; info@kmbakery.in &nbsp;|&nbsp; kmbakery.in
             </td>
           </tr>
         </table>

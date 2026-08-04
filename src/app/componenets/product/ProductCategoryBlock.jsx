@@ -1,7 +1,12 @@
 import ProductCard from "./ProductCard";
 
-export default function ProductCategoryBlock({ number, title, products, columns = 6 }) {
-  const colsClass =
+export default function ProductCategoryBlock({
+  number,
+  title,
+  products,
+  columns = 6,
+  onProductClick,
+}) {  const colsClass =
     columns === 3
       ? "grid-cols-2 sm:grid-cols-3"
       : columns === 5
@@ -17,12 +22,13 @@ export default function ProductCategoryBlock({ number, title, products, columns 
       <div className={`mt-5 grid ${colsClass} gap-5`}>
         {products.map((p) => (
           <ProductCard
-            key={p.id}
-            number={p.id}
-            name={p.name}
-            image={p.image}
-            comingSoon={p.comingSoon}
-          />
+  key={p.id}
+  number={p.id}
+  name={p.name}
+  image={p.image}
+  comingSoon={p.comingSoon}
+  onClick={() => onProductClick?.(p)}
+/>
         ))}
       </div>
     </div>
