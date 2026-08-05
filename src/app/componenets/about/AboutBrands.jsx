@@ -1,67 +1,99 @@
 const subBrands = [
   {
     name: "Sub Brand One",
-    img: "/sub1.png", // Replace with your image
+    img: "/sub1.png",
     tagline: "Premium Quality",
-    description: "Crafted with the finest ingredients, this sub-brand represents our commitment to gourmet excellence and premium taste for discerning customers."
+    description:
+      "Crafted with the finest ingredients, this sub-brand represents our commitment to gourmet excellence and premium taste for discerning customers.",
   },
   {
     name: "Sub Brand Two",
-    img: "/sub2.jpeg", // Replace with your image
+    img: "/sub2.jpeg",
     tagline: "Everyday Freshness",
-    description: "Focused on daily freshness and affordability, this line brings our trusted bakery heritage to everyday snacks and household staples across Kerala."
+    description:
+      "Focused on daily freshness and affordability, this line brings our trusted bakery heritage to everyday snacks and household staples across Kerala.",
+  },
+  {
+    name: "Sub Brand Three",
+    img: "/sub3.jpeg",
+    tagline: "Authentic Taste",
+    description:
+      "Celebrating Kerala's bakery heritage with carefully crafted products that blend traditional flavors with modern quality standards.",
   },
 ];
 
 export default function AboutBrands() {
   return (
     <section className="w-full bg-white py-16 sm:py-20">
-      <div className="max-w-[1280px] mx-auto px-6">
-        
+      <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="mb-12">
-          <h3 className="text-[#0B2748] text-3xl font-extrabold mb-1">Our Sub-Brands</h3>
-          <span className="block h-[3px] w-8 bg-[#E8402C] mb-4" />
-          <p className="text-black/70 text-[15px] max-w-xl">
-            Beyond our main flagship products, we have expanded our family with specialized sub-brands designed to cater to diverse tastes and daily needs.
+        <div className="max-w-2xl mb-14">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-[#0B2748]">
+            Our Sub-Brands
+          </h3>
+
+          <span className="block h-[3px] w-10 bg-[#E8402C] mt-2 mb-5" />
+
+          <p className="text-black/70 leading-relaxed">
+            Beyond our flagship products, we've grown a family of specialized
+            brands that bring quality, freshness, and authentic taste to every
+            customer.
           </p>
         </div>
 
-        {/* Sub-Brands Grid (No Cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 ">
+        {/* Brands */}
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {subBrands.map((brand, index) => (
-            <div 
-              key={brand.name} 
-              className={`flex flex-col md:flex-row items-start gap-6 ${
-                index === 0 ? 'md:border-r md:border-gray-200 md:pr-12' : 'md:pl-4'
-              }`}
+            <div
+              key={brand.name}
+              className={`
+                group
+                relative
+                flex
+                flex-col
+                items-center
+                text-center
+                px-6
+                py-10
+                transition-all
+                duration-300
+
+                ${
+                  index !== subBrands.length - 1
+                    ? "border-b md:border-b-0 md:border-r border-gray-200"
+                    : ""
+                }
+              `}
             >
-              {/* Logo Area */}
-              <div className="w-full md:w-2/5 flex-shrink-0 bg-amber-">
+              {/* Logo */}
+              <div className="flex items-center justify-center h-36 w-full mb-6">
                 <img
                   src={brand.img}
                   alt={brand.name}
-                  className="w-full h-32 object-contain scale-[1.1] " // Clean presentation without a card
+                  className="max-h-28 object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
-              {/* Content Area */}
-              <div className="w-full md:w-3/5">
-                {/* Matches the "About Us" label style from Hero section */}
-                <p className="text-[#E8402C] font-semibold text-[13px] uppercase tracking-wide mb-2">
-                  {brand.tagline}
-                </p>
-                <h4 className="text-[#123B7A] text-xl font-extrabold mb-3">
-                  {brand.name}
-                </h4>
-                <p className="text-black/70 text-[14px] leading-relaxed">
-                  {brand.description}
-                </p>
-              </div>
+              {/* Tagline */}
+              <p className="text-[#E8402C] uppercase tracking-[0.18em] text-xs font-bold mb-2">
+                {brand.tagline}
+              </p>
+
+              {/* Name */}
+              <h4 className="text-[#123B7A] text-2xl font-extrabold mb-4">
+                {brand.name}
+              </h4>
+
+              {/* Description */}
+              <p className="text-[15px] leading-7 text-black/70 max-w-sm">
+                {brand.description}
+              </p>
+
+              {/* Accent Line */}
+              <div className="mt-8 h-1 w-10 rounded-full bg-[#E8402C] transition-all duration-300 group-hover:w-16" />
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
