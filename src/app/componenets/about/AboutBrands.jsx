@@ -7,7 +7,7 @@ const subBrands = [
   },
   {
     name: "Sub Brand Two",
-    img: "/sub2.png", // Replace with your image
+    img: "/sub2.jpeg", // Replace with your image
     tagline: "Everyday Freshness",
     description: "Focused on daily freshness and affordability, this line brings our trusted bakery heritage to everyday snacks and household staples across Kerala."
   },
